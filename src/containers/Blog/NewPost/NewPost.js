@@ -14,7 +14,7 @@ class NewPost extends Component {
             content: this.state.content,
             author: this.state.content
         }
-        axios.post("https://console.firebase.google.com/u/0/project/finix-burger/database/finix-burger-default-rtdb/data/~2F", data)
+        axios.post("https://finix-burger-default-rtdb.firebaseio.com/", data)
         .then(reponse=> console.log(reponse))
         .catch(error=>console.log(error))
     }
